@@ -4,8 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <h1>Hello programming Hero tim</h1>
+  <body class="bg-[#f5fff6]">
+    <nav
+      class="px-[70px] pt-[25px] pb-[25px] flex justify-between h-[100px] items-center flex-col lg:flex-row"
+    >
+      <div class="flex justify-center items-center gap-3 h-[50px]">
+        <img class="h-[50px]" src="assets/logo.png" alt="" />
+        <h2 class="text-lg text-[#006747] font-bold">
+          Emergency <br />Service
+        </h2>
+      </div>
+      <div
+        class="flex justify-center items-center h-[50px] gap-3 mt-3 lg:gap-5 p-2"
+      >
+        <div
+          class="flex justify-center items-center bg-[#41ff6b1a] h-full w-[123px] gap-2 font-bold rounded-full"
+        >
+          <span>0</span>
+          <img class="w-[30px]" src="assets/heart.png" alt="" />
+        </div>
+        <div
+          class="flex justify-center items-center gap-2 h-full w-[106px] bg-[#41ff6b1a] font-bold rounded-full"
+        >
+          <span>100</span>
+          <img class="w-[25px]" src="assets/coin.png" alt="" />
+        </div>
+        <div
+          class="w-[127px] bg-[#00a63e] h-full flex justify-center items-center rounded-full gap-1 text-white font-semibold"
+        >
+          <span>2</span>
+          copy
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="banner bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] flex justify-center items-center flex-col py-12 mt-9 gap-3 text-center max-w-[100%] mx-auto"
+    >
+      <img class="w-[90px] h-[91px]" src="assets/logo.png" alt="" />
+      <h2 class="text-xl text-white font-bold lg:text-[40px]">
+        Emergency Service Directory
+      </h2>
+      <p class="text-white">
+        Government Emergency Services at Your Fingertip A Project by Government
+        of the People's Republic of Bangladesh
+      </p>
+    </section>
   </body>
 </html>
