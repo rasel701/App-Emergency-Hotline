@@ -1,17 +1,16 @@
 const cardContainer = document.querySelector(".card-container");
-let heartCount = parseInt(document.querySelector("#heart-count").innerHTML);
+let heartCount = parseInt(document.querySelector("#heart-count").innerText);
 const coinsNumber = document.querySelector(".coinsNumber");
-let converCoinsNumber = parseInt(coinsNumber.innerHTML);
+let converCoinsNumber = parseInt(coinsNumber.innerText);
 const historyList = document.querySelector(".history-list");
 const clearBtn = document.querySelector(".clear-btn");
 const copyCount = document.querySelector(".copyCount");
-console.log(copyCount);
-let converCopyCount = parseInt(copyCount.innerHTML);
+let converCopyCount = parseInt(copyCount.innerText);
 
 cardContainer.addEventListener("click", (e) => {
   if (e.target.closest(".fa-heart")) {
     heartCount++;
-    document.querySelector("#heart-count").innerHTML = heartCount;
+    document.querySelector("#heart-count").innerText = heartCount;
   }
   if (e.target.closest(".btn-call")) {
     callingFun(e);
@@ -27,9 +26,9 @@ clearBtn.addEventListener("click", (e) => {
 
 function callingFun(e) {
   const parentDiv = e.target.closest(".card");
-  const serviceName = parentDiv.querySelector("h2").innerHTML;
-  const serviceNumber = parentDiv.querySelector("h3").innerHTML;
-  if (converCoinsNumber > 0) {
+  const serviceName = parentDiv.querySelector("h2").innerText;
+  const serviceNumber = parentDiv.querySelector("h3").innerText;
+  if (converCoinsNumber >= 20) {
     alert(`Calling ${serviceName} ${serviceNumber}`);
 
     coinsNumber.innerHTML = converCoinsNumber -= 20;
@@ -61,7 +60,7 @@ function callingFun(e) {
 function copyFunc(e) {
   const cardBox = e.target.closest(".card");
 
-  const serviceNumber = cardBox.querySelector("h3").innerHTML;
+  const serviceNumber = cardBox.querySelector("h3").innerText;
   console.log(serviceNumber);
   navigator.clipboard.writeText(serviceNumber).then(() => {
     alert(`Copied ${serviceNumber}`);
