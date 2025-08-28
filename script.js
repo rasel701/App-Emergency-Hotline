@@ -65,6 +65,6 @@ function copyFunc(e) {
   navigator.clipboard.writeText(serviceNumber).then(() => {
     alert(`Copied ${serviceNumber}`);
     converCopyCount++;
-    copyCount.innerHTML = converCopyCount;
+    copyCount.innerText = converCopyCount;
   });
 }
