@@ -163,3 +163,61 @@ How to get current local time in js
 ---
 
 # Let's Code and Achieve your Dream 🎯
+
+## ALL THE QUESTION ANSWER
+
+---
+
+### **Answer to the question NO-1:**
+
+- **`getElementById("id")`**
+  Finds an element by its unique`id`.Returns **only one element**.
+
+- **`getElementsByClassName("class")`**
+  Finds **all elements** with the given class name. Returns an **HTMLCollection** (not an array,but can be looped using `for` of `for...of`).
+
+- **`queryselector(selector)`**
+  Finds the **first matching element** based on a CSS selector.
+
+- **`querySelectorAll(selector)`**
+  Finds **all matching elements** based on a CSS selector. Returns a **NodeList** (can be looped like an array).
+
+### **Answer to the question No-2**:
+
+- Create a new element:
+
+```javascript
+const div = document.createElement("div");
+```
+
+- Add content or attributes:
+
+```javascript
+div.innerText = "Hello world";
+div.classList.add("my-class");
+```
+
+- Insert into the DOM:
+
+```javascript
+const container = document.getElementById("#container");
+container.append(div);
+```
+
+### **Answer to the question NO-3**:
+
+**Event Bubbling:**
+
+- when an event occurs on a child element, it **propagates (bubbles up)** to its parent elements.
+- **Example:** If a button inside a **div** is clicked, the event first fires on the **button**, then on the **parent div**, then on the **body**, and so on.
+
+### **Answer to the question No-4**:
+
+**Event Delegation:**
+-Event Delegation means attaching a **single event listenert** a parent element and handling events on its child elements using `event.target`. -**Benefits:** Saves memory, improves performance.
+
+### **Answer to the question NO-5**
+
+- **`preventDefault()`**: Prevents the default behavior of an element (e.g.,prevent a link from navigation,prevent form submission).
+
+- **`stopPropagation()`**: Stops the event from **bubbling up** to parent elements.
